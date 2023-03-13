@@ -1,12 +1,9 @@
 package Lab2;
 
-import java.awt.*;
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
-import javax.swing.JFrame;
-import javax.swing.JProgressBar;
-import javax.swing.SwingUtilities;
 
 public class Window extends JFrame implements Observer {
     ArrayList<JProgressBar> bars=new ArrayList<JProgressBar>();
@@ -30,6 +27,6 @@ public class Window extends JFrame implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        bars.get(((Fir )o).getId()).setValue(((Fir )o).getVal());
+        bars.get(((Fir)o).getId()).setValue(((Fir )o).getVal());
     }
 }

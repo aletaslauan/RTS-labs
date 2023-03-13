@@ -26,13 +26,14 @@ class ComplexNumber{
     //public static ComplexNumber product()
 static void product(int a, int b, int c, int d)
 {
-        int prod1 = a*c;
-        int prod2 = b*d;
-        int prod3 = (a+b)*(c+d);
+    int prod1 = a*c;
+    int prod2 = b*d;
+    int imag = a*b+d*c;
 
-        int real = prod1 - prod2;
-        int imag= prod3 - (prod1 + prod2);
-    System.out.println("\nThe product is: " +real + imag + "+" + "i");
+    int real = prod1 - prod2;
+
+
+    System.out.println("\nThe product is: "+real+ "+" + imag + "i");
 }
 }
 

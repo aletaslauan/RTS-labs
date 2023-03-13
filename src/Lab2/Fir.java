@@ -35,7 +35,6 @@ public class Fir extends Observable implements Runnable {
         return id;
     }
 
-
     public int getVal(){
         return val;
     }
